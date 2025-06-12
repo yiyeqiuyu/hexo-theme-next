@@ -583,7 +583,7 @@ math:
 
 # Easily enable fast Ajax navigation on your website.
 # For more information: https://github.com/next-theme/pjax
-pjax: true
+pjax: false
 
 # FancyBox is a tool that offers a nice and elegant way to add zooming functionality for images.
 # For more information: https://fancyapps.com/fancybox/
@@ -601,24 +601,27 @@ lazyload: true
 # Automatically insert whitespace between CJK and half-width characters.
 # For more information: https://github.com/vinta/pangu.js
 # Server-side plugin: https://github.com/next-theme/hexo-pangu
-pangu: false
+pangu: true
 
 # Prefetch links based on what is in the user's viewport.
 # For more information: https://getquick.link
 # Front-matter variable (nonsupport home archive).
 quicklink:
-  enable: false
+  # 总开关，设为 true 来启用 Quicklink
+  enable: true
 
-  # Home page and archive page can be controlled through home and archive options below.
-  # This configuration item is independent of `enable`.
-  home: false
-  archive: false
+  # 在主页上启用预加载
+  home: true
+  # 在归档页（包括分类、标签页）上启用预日
+  archive: true
 
-  # Default (true) will initialize quicklink after the load event fires.
+  # --- 以下是高级选项，通常保持默认即可 ---
+
+  # (推荐) true: 等待页面主要内容加载完毕后再初始化，避免阻塞页面渲染
   delay: true
-  # Custom a time in milliseconds by which the browser must execute prefetching.
+  # (推荐) 浏览器必须在3秒内执行预取，这是一个合理的空闲等待时间
   timeout: 3000
-  # Default (true) will attempt to use the fetch() API if supported (rather than link[rel=prefetch]).
+  # (推荐) true: 优先使用 fetch() API，通常比 <link rel=prefetch> 效率更高
   priority: true
 
 
