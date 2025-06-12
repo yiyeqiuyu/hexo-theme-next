@@ -681,7 +681,7 @@ comments:
   # Setting `true` means remembering the comment system selected by the visitor.
   storage: true
   # Lazyload all comment systems.
-  lazyload: false
+  lazyload: true
   # Modify texts or order for any naves, here are some examples.
   nav:
     #disqus:
@@ -726,11 +726,11 @@ livere_uid: # <your_uid>
 # For more information: https://gitalk.github.io
 
 gitalk:
-  enable: true # 注意这里是 true
+  enable: true
   github_id: yiyeqiuyu
   repo: my-blog-gitalk
-  client_id: Ov23li9vm43TRRhbxvL9
-  client_secret: 1f2658332cbc14b8d73e1dfbbca2a280f4f8e25d
+  client_id: process.env.GITALK_CLIENT_ID
+  client_secret: process.env.GITALK_CLIENT_SECRET
   admin_user: yiyeqiuyu
   distraction_free_mode: true
   language: zh-CN
