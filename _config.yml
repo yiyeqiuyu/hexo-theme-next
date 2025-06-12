@@ -725,9 +725,9 @@ livere_uid: # <your_uid>
 gitalk:
   enable: true # 注意这里是 true
   github_id: yiyeqiuyu
-  repo: yiyeqiuyu.github.io
-  client_id: Ov23liUoc529FDj9OmEb
-  client_secret: adeb7f60f753d503cad080c1b1d9581648a645d6
+  repo: my-blog-gitalk
+  client_id: Ov23li9vm43TRRhbxvL9
+  client_secret: 1f2658332cbc14b8d73e1dfbbca2a280f4f8e25d
   admin_user: yiyeqiuyu
   distraction_free_mode: true
   language: zh-CN
